@@ -50,10 +50,15 @@ on:
 
 env:
   PROJECT_ID: virtual-flux-425122-p9 # TODO: update Google Cloud project id
+ 
+  #clowd run
   GAR_LOCATION: us-central1 # TODO: update Artifact Registry location
   SERVICE: coursesapi # TODO: update Cloud Run service name
+  
+  #artificat registery repo
+  ART_REG: server #/repo 
   REGION: us-central1 # TODO: update Cloud Run service region
-
+  IMAGE: client 
 jobs:
   deploy:
     # Add 'id-token' with the intended permissions for workload identity federation
